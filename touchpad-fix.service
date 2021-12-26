@@ -1,0 +1,7 @@
+[Unit]
+Description=Run my_user_script
+After=suspend.target hibernate.target hybrid-sleep.target suspend-then-hibernate.target multi-user.target
+[Service]
+ExecStart=/usr/bin/touchpad-fix
+[Install]
+WantedBy=suspend.target hibernate.target hybrid-sleep.target suspend-then-hibernate.target multi-user.target
